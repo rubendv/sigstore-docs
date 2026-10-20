@@ -135,7 +135,7 @@ The user must have the following IAM roles:
 Azure Key Vault keys can be used in `cosign` for signing and verification. The URI format for Azure Key Vault is:
 `azurekms://[VAULT_NAME][VAULT_URI]/[KEY]` where `$VAULT_NAME`, `$VAULT_URI`, and `$KEY` are replaced with the correct values.
 
-You can first run `az login` if you have the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) installed, or set the following environment variables to let Cosign authenticate to Azure Key Vault (see this [reference](https://devblogs.microsoft.com/azure-sdk/authentication-and-the-azure-sdk/#environment-variables) for more details about Azure SDK Authentication):
+If the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) is installed `az login` can be used, or the following environment variables can be set to let Cosign authenticate to Azure Key Vault (see this [reference](https://devblogs.microsoft.com/azure-sdk/authentication-and-the-azure-sdk/#environment-variables) for more details about Azure SDK Authentication):
 
 - `AZURE_TENANT_ID`
 - `AZURE_CLIENT_ID`
